@@ -13,35 +13,26 @@ class LogFileHandler(FileSystemEventHandler):
     def on_modified(self, event):
         for file_path in self.files_to_monitor:
             if event.src_path.endswith(file_path):
-                # Get the current modification time
                 current_mtime = os.path.getmtime(file_path)
-
-                # Check if the modification time has changed since the last event
                 if self.last_modified.get(file_path) != current_mtime:
                     self.last_modified[file_path] = current_mtime
-                    print(f"{file_path} has been modified. Committing changes.")
+                    print(f"\n{file_path} has been modified. Committing changes.")
                     self.commit_and_push_changes(file_path)
-                else:
-                   pass
 
     def commit_and_push_changes(self, file_path):
         try:
             # Stage the file
-            print(" ")
             subprocess.run(["git", "add", file_path], check=True)
 
-            # Check if there are any staged changes
+            # Check for staged changes
             diff_check = subprocess.run(["git", "diff", "--cached", "--exit-code"], capture_output=True)
             if diff_check.returncode != 0:
-                # Get current datetime in "HHMMDDMMYYYY" format
                 current_datetime = datetime.now().strftime("%H%M%d%m%Y")
                 commit_message = f"{current_datetime}"
 
-                # Commit the changes
+                # Commit and push changes
                 subprocess.run(["git", "commit", "-m", commit_message], check=True)
-                # Push the changes
                 subprocess.run(["git", "push"], check=True)
-                print(" ")
                 print(f"Changes pushed successfully for {file_path} with message '{commit_message}'.")
             else:
                 print(f"No changes to commit for {file_path}.")
