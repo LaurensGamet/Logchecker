@@ -20,7 +20,6 @@ class LogFileHandler(FileSystemEventHandler):
                 if self.last_modified.get(file_path) != current_mtime:
                     self.last_modified[file_path] = current_mtime
                     print(f"{file_path} has been modified. Committing changes.")
-                    print(" ")
                     self.commit_and_push_changes(file_path)
                 else:
                    pass
