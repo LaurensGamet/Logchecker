@@ -35,7 +35,7 @@ class LogFileHandler(FileSystemEventHandler):
             if diff_check.returncode != 0:
                 # Get current datetime in "HHMMDDMMYYYY" format
                 current_datetime = datetime.now().strftime("%H%M%d%m%Y")
-                commit_message = f"{current_datetime} - Update {file_path}"
+                commit_message = f"{current_datetime}"
 
                 # Commit the changes
                 subprocess.run(["git", "commit", "-m", commit_message], check=True)
