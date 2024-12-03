@@ -1,5 +1,6 @@
 import time
 import subprocess
+import os
 from datetime import datetime
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
@@ -7,12 +8,21 @@ from watchdog.events import FileSystemEventHandler
 class LogFileHandler(FileSystemEventHandler):
     def __init__(self, files_to_monitor):
         self.files_to_monitor = files_to_monitor
+        self.last_modified = {}
 
     def on_modified(self, event):
         for file_path in self.files_to_monitor:
             if event.src_path.endswith(file_path):
-                print(f"{file_path} has been modified. Committing changes.")
-                self.commit_and_push_changes(file_path)
+                # Get the current modification time
+                current_mtime = os.path.getmtime(file_path)
+
+                # Check if the modification time has changed since the last event
+                if self.last_modified.get(file_path) != current_mtime:
+                    self.last_modified[file_path] = current_mtime
+                    print(f"{file_path} has been modified. Committing changes.")
+                    self.commit_and_push_changes(file_path)
+                else:
+                    print(f"Ignored duplicate event for {file_path}.")
 
     def commit_and_push_changes(self, file_path):
         try:
