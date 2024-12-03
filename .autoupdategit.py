@@ -20,13 +20,15 @@ class LogFileHandler(FileSystemEventHandler):
                 if self.last_modified.get(file_path) != current_mtime:
                     self.last_modified[file_path] = current_mtime
                     print(f"{file_path} has been modified. Committing changes.")
+                    print(" ")
                     self.commit_and_push_changes(file_path)
                 else:
-                    print(f"Ignored duplicate event for {file_path}.")
+                   pass
 
     def commit_and_push_changes(self, file_path):
         try:
             # Stage the file
+            print(" ")
             subprocess.run(["git", "add", file_path], check=True)
 
             # Check if there are any staged changes
@@ -40,6 +42,7 @@ class LogFileHandler(FileSystemEventHandler):
                 subprocess.run(["git", "commit", "-m", commit_message], check=True)
                 # Push the changes
                 subprocess.run(["git", "push"], check=True)
+                print(" ")
                 print(f"Changes pushed successfully for {file_path} with message '{commit_message}'.")
             else:
                 print(f"No changes to commit for {file_path}.")
