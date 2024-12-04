@@ -8,7 +8,7 @@ keywords = ["error", "failed", "exception", "fatal"]  # Keywords to detect
 slack_webhook = 'https://hooks.slack.com/services/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'
 slack_message_template = {
         "username": "Somtoday Laurens",
-        "text": "Warning!\nThe latest log contained an error!\n<http://188.90.170.38:8000/Somtoday_Laurens.log|Click here to view logs>",
+        "text": "Warning!\nThe latest log contained an error!\n<https://raw.githubusercontent.com/LaurensGamet/Logchecker/refs/heads/main/Somtoday_Laurens.log|Click here to view logs>",
 	"icon_url": "http://188.90.170.38:8000/.laurens.jpg"
 }
 
