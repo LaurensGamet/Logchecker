@@ -4600,3 +4600,11 @@ Warning: Permanently added the ECDSA host key for IP address '140.82.112.4' to t
 Already up to date.
 
 # Run main file
+
+# Upload to Github
+[main da926a1] 093005122024
+ 1 file changed, 382 insertions(+), 406 deletions(-)
+To github.com:LaurensGamet/Somtoday_Laurens.git
+   9c8938a..da926a1  main -> main
+
+
