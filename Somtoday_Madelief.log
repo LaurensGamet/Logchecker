@@ -319,3 +319,6 @@ Traceback (most recent call last):
 requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.somtoday.nl', port=443): Max retries exceeded with url: /rest/v1/icalendar/stream/58405be0-5611-4aba-be66-9894a1009f12/c5490491-11eb-4aca-a8f1-ea3f58e75d54 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0xb5eb6be0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
 
 # Upload to Github
+[main 1997530] 053011122024
+ 1 file changed, 3668 deletions(-)
+ delete mode 100644 Final-File.ics
