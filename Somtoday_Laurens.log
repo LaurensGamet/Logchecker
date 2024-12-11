@@ -571,3 +571,13 @@ and the repository exists.
 Already up to date.
 
 # Run main file
+The file does not exist
+
+# Upload to Github
+[main bb763ab] 073011122024
+ 1 file changed, 3764 insertions(+)
+ create mode 100644 Final-File.ics
+To github.com:LaurensGamet/Somtoday_Laurens.git
+   258b621..bb763ab  main -> main
+
+
