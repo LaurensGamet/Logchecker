@@ -311,3 +311,11 @@ Traceback (most recent call last):
   File "/usr/lib/python3/dist-packages/requests/api.py", line 61, in request
     return session.request(method=method, url=url, **kwargs)
   File "/usr/lib/python3/dist-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.somtoday.nl', port=443): Max retries exceeded with url: /rest/v1/icalendar/stream/58405be0-5611-4aba-be66-9894a1009f12/c5490491-11eb-4aca-a8f1-ea3f58e75d54 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0xb5eb6be0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+# Upload to Github
