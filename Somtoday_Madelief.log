@@ -19,3 +19,11 @@ To github.com:LaurensGamet/Somtoday_Madelief.git
 # Get in right directory
 
 # Get up to date
+From github.com:LaurensGamet/Somtoday_Madelief
+   639d417..79ff4b8  main       -> origin/main
+Updating 639d417..79ff4b8
+Fast-forward
+ main.py | 12 +++++++-----
+ 1 file changed, 7 insertions(+), 5 deletions(-)
+
+# Run main file
