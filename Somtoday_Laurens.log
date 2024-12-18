@@ -35,3 +35,17 @@ To github.com:LaurensGamet/Somtoday_Laurens.git
 # Get in right directory
 
 # Get up to date
+From github.com:LaurensGamet/Somtoday_Laurens
+   9706713..0b6fa0f  main       -> origin/main
+Updating 9706713..0b6fa0f
+Fast-forward
+ main.py | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+# Run main file
+  File "/home/laurens/Somtoday_Laurens/main.py", line 128
+    "SUMMARY:tm208\, tm137\, tm214\, tm215",,
+                                            ^
+SyntaxError: invalid syntax
+
+# Upload to Github
