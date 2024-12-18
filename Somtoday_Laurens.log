@@ -1,0 +1,15 @@
+22:11 18-12-2024
+
+# Get in right directory
+
+# Get up to date
+From github.com:LaurensGamet/Somtoday_Laurens
+   0b6fa0f..0640234  main       -> origin/main
+Updating 0b6fa0f..0640234
+Fast-forward
+ main.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+# Run main file
+
+# Upload to Github
