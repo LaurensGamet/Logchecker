@@ -24,3 +24,11 @@ To github.com:LaurensGamet/Somtoday_Laurens.git
 # Get in right directory
 
 # Get up to date
+From github.com:LaurensGamet/Somtoday_Laurens
+   48cb695..8038088  main       -> origin/main
+Updating 48cb695..8038088
+Fast-forward
+ main.py | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+# Run main file
