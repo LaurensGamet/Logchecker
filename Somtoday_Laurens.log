@@ -45,3 +45,11 @@ To github.com:LaurensGamet/Somtoday_Laurens.git
 # Get in right directory
 
 # Get up to date
+From github.com:LaurensGamet/Somtoday_Laurens
+   633ff9f..8b3de2b  main       -> origin/main
+Updating 633ff9f..8b3de2b
+Fast-forward
+ main.py | 7 ++++---
+ 1 file changed, 4 insertions(+), 3 deletions(-)
+
+# Run main file
