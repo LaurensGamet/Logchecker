@@ -344,3 +344,11 @@ To github.com:LaurensGamet/Somtoday_Madelief.git
 # Get in right directory
 
 # Get up to date
+From github.com:LaurensGamet/Somtoday_Madelief
+   e38f554..72631a2  main       -> origin/main
+Updating e38f554..72631a2
+Fast-forward
+ main.py | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+# Run main file
