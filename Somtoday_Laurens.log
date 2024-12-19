@@ -35,3 +35,11 @@ To github.com:LaurensGamet/Somtoday_Laurens.git
 # Get in right directory
 
 # Get up to date
+From github.com:LaurensGamet/Somtoday_Laurens
+   32d43b9..5541f20  main       -> origin/main
+Updating 32d43b9..5541f20
+Fast-forward
+ main.py | 10 ++++++++++
+ 1 file changed, 10 insertions(+)
+
+# Run main file
