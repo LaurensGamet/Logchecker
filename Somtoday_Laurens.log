@@ -1978,3 +1978,11 @@ To github.com:LaurensGamet/Somtoday_Laurens.git
 # Get in right directory
 
 # Get up to date
+From github.com:LaurensGamet/Somtoday_Laurens
+   b9e57de..357f53f  main       -> origin/main
+Updating b9e57de..357f53f
+Fast-forward
+ main.py | 1 +
+ 1 file changed, 1 insertion(+)
+
+# Run main file
