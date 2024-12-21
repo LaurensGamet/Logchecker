@@ -1952,3 +1952,16 @@ To github.com:LaurensGamet/Somtoday_Madelief.git
    aedb173..1778231  main -> main
 
 
+00:00 22-12-2024
+
+# Get in right directory
+
+# Get up to date
+From github.com:LaurensGamet/Somtoday_Madelief
+   1778231..4077d8e  main       -> origin/main
+Updating 1778231..4077d8e
+Fast-forward
+ main.py | 1 +
+ 1 file changed, 1 insertion(+)
+
+# Run main file
