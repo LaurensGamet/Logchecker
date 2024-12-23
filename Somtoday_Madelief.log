@@ -3231,3 +3231,11 @@ Already up to date.
 # Run main file
 
 # Upload to Github
+Auto packing the repository in background for optimum performance.
+See "git help gc" for manual housekeeping.
+[main 1a24c37] 153023122024
+ 1 file changed, 123 insertions(+), 123 deletions(-)
+To github.com:LaurensGamet/Somtoday_Madelief.git
+   e080456..1a24c37  main -> main
+
+
