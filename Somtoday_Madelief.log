@@ -1171,3 +1171,11 @@ To github.com:LaurensGamet/Somtoday_Madelief.git
 # Get in right directory
 
 # Get up to date
+From github.com:LaurensGamet/Somtoday_Madelief
+   62dfcee..949ee44  main       -> origin/main
+Updating 62dfcee..949ee44
+Fast-forward
+ main.py | 10 ++++++++++
+ 1 file changed, 10 insertions(+)
+
+# Run main file
