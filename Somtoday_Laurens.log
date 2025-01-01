@@ -1366,3 +1366,7 @@ To github.com:LaurensGamet/Somtoday_Laurens.git
 Already up to date.
 
 # Run main file
+
+# Upload to Github
+Auto packing the repository in background for optimum performance.
+See "git help gc" for manual housekeeping.
